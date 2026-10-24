@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Primary meta tags -->
+    <title>Mitz Zyrelle M. Victorio — Computer Engineering Student & Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Mitz Zyrelle M. Victorio, a Computer Engineering student and aspiring software developer working across web development, AI, computer vision, and embedded systems."
+    />
+    <meta name="author" content="Mitz Zyrelle M. Victorio" />
+    <meta name="theme-color" content="#07090f" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mitz Zyrelle M. Victorio — Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Engineering Ideas Into Intelligent Solutions. Web development, AI & computer vision, and embedded systems."
+    />
+    <!-- ✏️ EDIT ME: set to your deployed URL + an OG image you add to /public -->
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="/favicon.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mitz Zyrelle M. Victorio — Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Engineering Ideas Into Intelligent Solutions."
+    />
+
+    <!-- Fonts: Inter (body) + JetBrains Mono (headings/code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Avoid theme flash: apply stored/system theme before paint -->
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          var isDark = stored ? stored === 'dark' : prefersDark
+          document.documentElement.classList.toggle('dark', isDark)
+        } catch (e) {
+          /* ignore */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
