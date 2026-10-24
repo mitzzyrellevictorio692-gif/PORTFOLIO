@@ -1,26 +1,8 @@
 import type { Project, ProjectCategory } from '@/types/portfolio'
 
-export const projectCategories: ProjectCategory[] = ['AI & Research', 'Embedded Systems', 'Web']
+export const projectCategories: ProjectCategory[] = ['Embedded Systems', 'Web']
 
 export const projects: Project[] = [
-  {
-    id: 'navicane',
-    title: 'NaviCane: AI-Assisted Smart Helmet',
-    category: 'AI & Research',
-    prototype: true,
-    overview:
-      'An academic research prototype exploring how to help visually impaired individuals navigate more safely. The proposed system combines object detection, LiDAR-based distance measurement, audio warnings, voice guidance, and emergency tracking.',
-    objectives: [
-      'Explore obstacle awareness using object detection concepts',
-      'Measure distance to nearby obstacles with a LiDAR-based approach',
-      'Provide audio warnings and voice guidance for navigation cues',
-      'Investigate emergency tracking for added safety',
-    ],
-    tech: ['Object Detection', 'LiDAR', 'Audio Guidance', 'Embedded', 'Research'],
-    illustration: 'navicane',
-    github: '#',
-    demo: '',
-  },
   {
     id: 'esp32-led',
     title: 'ESP32 Emergency LED System',
